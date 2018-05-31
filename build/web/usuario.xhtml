@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Cadastro de Usuario</title>
+    </h:head>
+    <h:body>
+        <center>
+            <h:form>
+                <br/><br/>
+                <h:panelGrid columns="2">
+                    CPF <h:inputText id="loginTxt" value="#{usuarioBean.usuario.CPF}"/>
+                    Nome <h:inputText id="nomeTxt" value ="#{usuarioBean.usuario.nome}"/>
+                    Data de Nascimento <h:inputText id="dtNascimentoTxt" value="#{usuarioBean.usuario.dataNascimento}"/>                    
+                    Endereco <h:inputText id="enderecoTxt" value="#{usuarioBean.usuario.contato.endereco}"/>                    
+                    Telefone <h:inputText id="telefoneTxt" value="#{usuarioBean.usuario.contato.telefone}"/>                    
+                    Email <h:inputText id="emailTxt" value="#{usuarioBean.usuario.contato.email}"/>                    
+                    Senha <h:inputSecret id="senhaTxt" value="#{usuarioBean.usuario.senha}"/>
+                    <h:inputHidden/>
+                    <h:commandButton value="Cadastrar" action="#{usuarioBean.add}"/>
+                </h:panelGrid>
+                <h:dataTable value="" var="table" border="1">
+                    <h:column>
+                        <f:facet name="header">
+                            CPF
+                        </f:facet>
+                        <h:outputText value=""/>
+                    </h:column>
+                    <h:column>
+                        <f:facet name="header">
+                            Nome
+                        </f:facet>
+                        <h:outputText value=""/>
+                    </h:column>
+                    <h:column>
+                        <f:facet name="header">
+                            Data de Nascimento
+                        </f:facet>
+                        <h:outputText value=""/>
+                    </h:column>
+                    <h:column>
+                        <f:facet name="header">
+                            Endereco
+                        </f:facet>
+                        <h:outputText value=""/>
+                    </h:column>
+                    <h:column>
+                        <f:facet name="header">
+                            Telefone
+                        </f:facet>
+                        <h:outputText value=""/>
+                    </h:column>
+                    <h:column>
+                        <f:facet name="header">
+                            Email
+                        </f:facet>
+                        <h:outputText value=""/>
+                    </h:column>
+                    <h:column>
+                        <f:facet name="header">
+                            Senha
+                        </f:facet>
+                        <h:outputText value=""/>
+                    </h:column>
+                </h:dataTable>
+            </h:form>
+        </center>
+    </h:body>
+</html>

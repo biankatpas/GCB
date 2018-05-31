@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head>
+	<title>Green Cookbook</title>
+</h:head>
+<body>
+
+
+	<center>
+		<h:form>
+			<h:outputText value="teste tag jsf" />
+                Informe seus dados para efetuar login<br />
+			<br />
+			<h:panelGrid columns="2">
+                    CPF <h:inputText id="loginTxt" />
+                    Senha <h:inputSecret id="senhaTxt" />
+				<h:inputHidden />
+				<h:commandButton value="Login" />
+			</h:panelGrid>
+		</h:form>
+	</center>
+</body>
+</html>
